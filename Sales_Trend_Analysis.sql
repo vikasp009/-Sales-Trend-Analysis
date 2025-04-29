@@ -33,7 +33,7 @@ SELECT
     SUM(amount) AS total_revenue,
     COUNT(DISTINCT order_id) AS order_volume
 FROM 
-    online_sales
+   all_orders
 GROUP BY 
     YEAR(order_date),
     MONTH(order_date)
